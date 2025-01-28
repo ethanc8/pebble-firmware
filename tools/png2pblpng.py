@@ -16,7 +16,7 @@
 
 import png
 import itertools
-import StringIO
+import io as StringIO
 
 import pebble_image_routines
 

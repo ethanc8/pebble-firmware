@@ -36,7 +36,18 @@ pep8 = ">=1.7.1, <2"
 polib = ">=1.2.0, <2"
 intelhex = ">=2.1, <3"
 libpebble2 = ">=0.0.16"
+
+[feature.py36.dependencies]
+python = "3.6.*"
+
+[feature.wafbuild.dependencies]
+pexpect = "*"
+pypng = ">=0.20220715.0,<0.20220716"
+sh = ">=1.14.3,<2"
+pyelftools = ">=0.27,<0.28"
+bitarray = ">=2.3.4,<3"
 # FIXME: pyserial==2.7 and pypng==0.0.16 don't install
 
 [environments]
 mainpy39 = ["mainpy39"]
+wafbuild = ["py36", "wafbuild"]

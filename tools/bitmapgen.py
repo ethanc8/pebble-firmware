@@ -14,7 +14,7 @@
 # limitations under the License.
 
 
-import StringIO
+import io as StringIO
 import argparse
 import os
 import struct
@@ -347,7 +347,7 @@ def cmd_pbi(args):
 def cmd_header(args):
     pb = PebbleBitmap(args.input_png, bitmap_format=args.format,
                       color_reduction_method=args.color_reduction_method, crop=not args.disable_crop)
-    print pb.header()
+    print(pb.header())
 
 
 def cmd_white_trans_pbi(args):

@@ -408,6 +408,6 @@ else\n\
     pypy waf $ACTION\n\
 fi\n\
 ")
-        os.chmod(xcscript_path, 0755)
+        os.chmod(xcscript_path, 0o755)
         f.close()
         
