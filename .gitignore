@@ -55,3 +55,7 @@ analyze_mcu_flash_usage_treemap.jsonp
 .env
 
 .vscode
+
+# pixi environments
+.pixi
+*.egg-info

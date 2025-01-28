@@ -1,0 +1,42 @@
+[project]
+authors = ["ethanc8 <echaroenpitaks@gmail.com>"]
+channels = ["conda-forge"]
+description = "Add a short description here"
+name = "pebble-firmware"
+platforms = ["linux-64"]
+version = "0.1.0"
+
+[tasks]
+
+[feature.mainpy39.dependencies]
+python = "==3.9"
+setuptools = "<58.0.0"
+
+[feature.mainpy39.pypi-dependencies]
+setuptools = "<58.0.0"
+pillow = "==2.0.0"
+freetype-py = "==1.0"
+ply = "==3.4"
+pyusb = "==1.0.0b2"
+sh = "==1.4"
+pexpect = ">=4.9.0, <5"
+cobs = "<1.2.0"
+svg-path = "<5"
+requests = ">=2.32.3, <3"
+gitpython = "==1.0.1"
+pyelftools = "==0.23"
+pycrypto = "==2.6.1"
+mock = ">=5.1.0, <6"
+nose = ">=1.3.7, <2"
+boto = ">=2.49.0, <3"
+prompt-toolkit = ">=0.55"
+enum34 = ">=1.1.10, <2"
+bitarray = ">=3.0.0, <4"
+pep8 = ">=1.7.1, <2"
+polib = ">=1.2.0, <2"
+intelhex = ">=2.1, <3"
+libpebble2 = ">=0.0.16"
+# FIXME: pyserial==2.7 and pypng==0.0.16 don't install
+
+[environments]
+mainpy39 = ["mainpy39"]
